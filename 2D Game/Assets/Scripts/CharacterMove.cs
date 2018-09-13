@@ -26,7 +26,7 @@ public class CharacterMove : MonoBehaviour {
 	void Update () {
 
 		// This code makes the character jump
-		if(Input.GetKeyDown (KeyCode.Space)&& grounded){
+		if(Input.GetKeyDown (KeyCode.W)&& grounded){
 			Jump();
 		}
 		
