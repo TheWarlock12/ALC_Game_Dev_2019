@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
-	private Rigidbody2D PC;
+	public Rigidbody2D PC;
 
 	// Particles
 
@@ -27,11 +27,12 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 
 	void Start() {
-		PC = FindObjectOfType<Rigidbody2D> ();
+		//PC = FindObjectOfType<Rigidbody2D> ();
+		
 	}
 
 	public void RespawnPlayer(){
-		StartCoroutine ("RespawnPCCo");
+		StartCoroutine ("RespawnPlayerCo");
 	}
 
 	public IEnumerator RespawnPlayerCo(){
