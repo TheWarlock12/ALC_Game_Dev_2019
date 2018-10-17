@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour {
 			Destroy(other.gameObject);
 			ScoreManager.AddPoints (PointsForKill);	
 		}
-
+		
 		Instantiate(ProjectileParticle, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
