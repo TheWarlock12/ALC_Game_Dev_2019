@@ -5,44 +5,29 @@ using UnityEngine.UI;
 
 public class SpellManager : MonoBehaviour {
 
-	public static int Mana;
+	public static int ManaValue;
 
 
-	Text ManaValue;
+	Text ManaText;
 
 
 	// Use this for initialization
 	void Start () {
 		ManaValue = GetComponent<Text>();
 
-		Mana = 0;	
+		ManaValue = 0;	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Score < 0)
-			Score = 0;
+		if (ManaValue <= 0)
+			
+			
 
-		ScoreText.text = " " + Score;
+		ManaText.text = " " + ManaValue;
 	}
 
 	public static void AddPoints (int PointsToAdd){
-		Score += PointsToAdd;
+		ManaValue += PointsToAdd;
 	}
 }
-
-
-
-
-	
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-}
-	

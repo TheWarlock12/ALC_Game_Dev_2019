@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 1002926693}
   - component: {fileID: 1002926692}
   m_Layer: 5
-  m_Name: ManaPool
+  m_Name: ManaText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

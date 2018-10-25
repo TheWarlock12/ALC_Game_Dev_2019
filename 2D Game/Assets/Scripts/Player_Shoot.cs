@@ -17,7 +17,7 @@ public class Player_Shoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.RightControl))
+		if(Input.GetMouseButtonDown(0))
 			Instantiate(Projectile,FirePoint.position, FirePoint.rotation);
 		
 	}
