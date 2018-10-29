@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SpellManager : MonoBehaviour {
 
-	public static int ManaValue;
+	public static int Mana;
 
 
 	Text ManaText;
@@ -13,21 +13,22 @@ public class SpellManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		ManaValue = GetComponent<Text>();
+		ManaText = GetComponent<Text>();
 
-		ManaValue = 0;	
+		Mana = 0;	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (ManaValue <= 0)
+		if (Mana < 0)
+			Mana = 0
 			
 			
 
-		ManaText.text = " " + ManaValue;
+		ManaText.text = " " + Mana;
 	}
 
 	public static void AddPoints (int PointsToAdd){
-		ManaValue += PointsToAdd;
+		Mana += PointsToAdd;
 	}
 }
