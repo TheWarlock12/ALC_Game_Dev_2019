@@ -21,7 +21,7 @@ public class SpellManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Mana < 0)
-			Mana = 0
+			Mana = 0;
 			
 			
 
