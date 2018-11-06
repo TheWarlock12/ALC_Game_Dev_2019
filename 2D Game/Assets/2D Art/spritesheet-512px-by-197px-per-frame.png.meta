@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: b635ab54d33ab475e98ea060f5275b14
+guid: 2b56b7ca62de048c5be00e8c1b1e58ff
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Web (7)_0
+    21300000: spritesheet-512px-by-197px-per-frame_0
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -83,13 +83,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Web (7)_0
+      name: spritesheet-512px-by-197px-per-frame_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 147
-        height: 147
+        x: 504
+        y: 191
+        width: 470
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -97,7 +97,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68ac128d812ed4ad7bbfdc8551ac140e
+      spriteID: 2357ad7998bc4435cb6bc81c619e7be7
       vertices: []
       indices: 
       edges: []
@@ -105,7 +105,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 19f8e95111d3a4ef9a657e36ef7bc476
+    spriteID: 55552d43f0aa7431f9d1784785803693
     vertices: []
     indices: 
     edges: []

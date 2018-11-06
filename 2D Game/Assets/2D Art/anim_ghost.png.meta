@@ -86,10 +86,10 @@ TextureImporter:
       name: anim_ghost_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 155
-        width: 142
-        height: 139
+        x: 8
+        y: 151
+        width: 135
+        height: 143
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
