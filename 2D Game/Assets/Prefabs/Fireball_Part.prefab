@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198968464256500964}
   - component: {fileID: 199682837601149216}
   m_Layer: 0
-  m_Name: projectile_particles
+  m_Name: Fireball_Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2018,7 +2018,7 @@ ParticleSystem:
     m_Curve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 20
       minScalar: 0
       maxCurve:
         serializedVersion: 2

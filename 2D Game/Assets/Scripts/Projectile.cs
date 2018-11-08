@@ -25,6 +25,13 @@ public class Projectile : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GetComponent<Rigidbody2D>().velocity = new Vector2(Speed, GetComponent<Rigidbody2D>().velocity.y);
+
+//Player flip
+	if (GetComponent<Rigidbody2D>().velocity.x > 0)
+		transform.localScale = new Vector3(-0.7f, 0.7f, 1f);
+
+	else if (GetComponent<Rigidbody2D>().velocity.x < 0)
+		transform.localScale = new Vector3(0.7f, 0.7f, 1f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
