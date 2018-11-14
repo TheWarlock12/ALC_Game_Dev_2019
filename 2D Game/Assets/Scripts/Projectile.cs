@@ -5,8 +5,10 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
+
+	public float TimeOut;
 	
-	public Rigidbody2D PC;
+	public GameObject PC;
 	
 	public GameObject EnemyDeath;
 
@@ -16,10 +18,17 @@ public class Projectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		PC = GameObject.Find("PC");
+
+		EnemyDeath = Resources.Load("Prefabs/Enemy_Death_Particle") as GameObject;
+
+		ProjectileParticle = Resources.Load("Prefabs/Respawn_Particle") as GameObject;
 
 		if(PC.transform.localScale.x < 0)
 			Speed = -Speed;
 		
+		//Destroys Projectile after X seconds
+		Destroy(gameObject, TimeOut);
 	}
 	
 	// Update is called once per frame
@@ -28,10 +37,10 @@ public class Projectile : MonoBehaviour {
 
 //Player flip
 	if (GetComponent<Rigidbody2D>().velocity.x > 0)
-		transform.localScale = new Vector3(-0.7f, 0.7f, 1f);
+		transform.localScale = new Vector3(-0.3f, 0.3f, 1f);
 
 	else if (GetComponent<Rigidbody2D>().velocity.x < 0)
-		transform.localScale = new Vector3(0.7f, 0.7f, 1f);
+		transform.localScale = new Vector3(0.3f, 0.3f, 1f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
@@ -40,7 +49,10 @@ public class Projectile : MonoBehaviour {
 			Destroy(other.gameObject);
 			ScoreManager.AddPoints (PointsForKill);	
 		}
-		
+		Destroy (gameObject);
+	}	
+	void OnCollisionEnter2D(Collision2D other)
+	{
 		Instantiate(ProjectileParticle, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
