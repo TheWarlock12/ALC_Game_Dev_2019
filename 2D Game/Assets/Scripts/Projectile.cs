@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour {
 	void Update () {
 		GetComponent<Rigidbody2D>().velocity = new Vector2(Speed, GetComponent<Rigidbody2D>().velocity.y);
 
-//Player flip
+//Particle flip
 	if (GetComponent<Rigidbody2D>().velocity.x > 0)
 		transform.localScale = new Vector3(-0.3f, 0.3f, 1f);
 
