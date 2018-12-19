@@ -3143,6 +3143,29 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1151748420806524, guid: 1bbeaf9f207df4a08a48e904d2660b18, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 4633355080964026, guid: 1bbeaf9f207df4a08a48e904d2660b18, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -6.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633355080964026, guid: 1bbeaf9f207df4a08a48e904d2660b18, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324287518384856, guid: 1bbeaf9f207df4a08a48e904d2660b18,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1079658983}
+    - target: {fileID: 114955616440802420, guid: 1bbeaf9f207df4a08a48e904d2660b18,
+        type: 2}
+      propertyPath: LevelManager
+      value: 
+      objectReference: {fileID: 1838206180}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bbeaf9f207df4a08a48e904d2660b18, type: 2}
   m_IsPrefabParent: 0
@@ -5077,6 +5100,24 @@ GameObject:
   m_PrefabParentObject: {fileID: 1562416336899454, guid: 1bbeaf9f207df4a08a48e904d2660b18,
     type: 2}
   m_PrefabInternal: {fileID: 750426518}
+--- !u!95 &1079658983
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1079658981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57ae060628c8c4ee4b65eafe6ac4cacf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &1079658985 stripped
 Rigidbody2D:
   m_PrefabParentObject: {fileID: 50244918591951968, guid: 1bbeaf9f207df4a08a48e904d2660b18,
